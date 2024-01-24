@@ -1,0 +1,388 @@
+@font-face {
+    font-family: Blackletter;
+    src: url(../assets/font.TTF)
+  }
+
+.uhuuu{
+    background-color: #23251bce;
+    position: absolute;
+    top: 0;
+    display: none;
+    margin: auto;
+    z-index: 1111111;
+    width: 100%;
+    height: 100vh;
+}
+
+.gatitos{
+    width: 420px;
+    text-align: center;
+    top: 0;
+    display: none;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    animation: abrirG 6s normal forwards ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes abrirG{
+    0% {
+        opacity: 0;
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+
+    10%{
+        opacity: 1;
+        translate: 0 10px;
+        transform: rotate(10deg);
+    }
+
+    20% {
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+
+    30% {
+        translate: 0 10px;
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        translate: 0 10px;
+        transform: rotate(10deg);
+    }
+
+    60%{
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+
+    70% {
+        translate: 0 10px;
+        transform: rotate(-10deg);
+    }
+
+    80%{
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+
+    90% {
+        translate: 0 10px;
+        transform: rotate(10deg);
+    }
+
+    100%{
+        translate: 0 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes abrir{
+    0% {
+        opacity: 0;
+        translate: 0 0;
+    }
+  
+    75% {
+        opacity: 1;
+        translate: 0 10px;
+    }
+
+    100%{
+        translate: 0 0;
+    }
+}
+
+
+#fecha{
+    color: #FA3939;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    font-family: Blackletter;
+    display: block;
+    animation: abrir2 1.2s normal forwards ease-in-out;
+}
+
+.oba{
+        font-size: 35px;
+        color: #FA3939;
+        text-align: center;
+        display: block;
+        opacity: 1;
+        font-family: Blackletter;
+        animation: abrir2 1.2s normal forwards ease-in-out;
+}
+
+@keyframes abrir2{
+    0% {
+        opacity: 0;
+        transform: scale(1.0);
+    }
+
+    50%{
+        opacity: 0;
+        transform: scale(1.0);
+    }
+  
+    75% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100%{
+        translate: 0 0;
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+#nao{
+    color: #FA3939;
+    text-align: center;
+    display: none;
+    font-family: Blackletter;
+}
+
+#fecha:hover{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(145deg, #25281D 0%, #25281D 60%, #3d3d3d 100%);
+    font-family: Blackletter;
+    overflow-x: hidden;
+}
+
+.sectionCentral{
+    background: linear-gradient(145deg, #25281D 0%, #25281D 60%, #3d3d3d 100%);
+    overflow-x: hidden;
+    height: 100vh;
+    z-index: 1111;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    padding-top: 100px;
+    z-index: 1110;
+}
+
+.separacao{
+    width: 100%;
+    display: block;
+    animation: inicio 0.5s;
+    animation-duration: 0.5s;
+}
+
+.esqueleto{
+    width: 300px;
+    margin: auto;
+    animation-timing-function: ease-in-out;
+    animation: iniciar 0.5s normal forwards ease-in-out;
+    text-align: right;
+    display: block;
+    opacity: 0;
+}
+
+@keyframes iniciar {
+    from { opacity: 0; translate: -40px 0; }
+    to   { opacity: 1; translate: 0 0; }
+}
+
+.sepCarta{
+    animation-timing-function: ease-in-out;
+    animation: fade 1.5s normal forwards ease-in-out;
+    opacity: 0;
+}
+
+@keyframes fade {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+.titulo{
+    color: #FA3939;
+    font-size: 55px;
+    text-align: left;
+    margin: auto;
+    margin-top: 40px;
+    font-family: Blackletter;
+}
+
+.descricao{
+    color: #E8E8E8;
+    font-size: 33px;
+    text-align: left;
+    margin: auto;
+    margin-left: 0;
+    width: 440px;
+    font-family: Blackletter;
+}
+
+.botaoCarta{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+}
+
+.carta{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+.carta:hover{
+    max-width: 220px;
+}
+
+.fundo{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    height: 100vh;
+}
+
+.cartaImg{
+    background-color: #23251bce;
+    position: absolute;
+    top: 0;
+    display: none;
+    margin: auto;
+    z-index: 1111111;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.convite{
+    max-height: 80vh;
+    display: block;
+    margin: auto;
+    text-align:center;
+    position: relative;
+    animation: abrir 0.5s normal forwards ease-in-out;
+}
+
+@media (max-width: 1360px){
+    .convite{
+        width: 400px;
+    }
+}
+
+.divOpcao{
+    display: flex;
+    margin: auto;
+    max-width: 400px;
+}
+
+.opcao{
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: Blackletter;
+    transition: 0.2s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+    animation: abrir2 1.2s normal forwards ease-in-out;
+}
+
+.opcao:hover{
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.fundo1, .fundo2{
+    display: none;
+    position: absolute;
+}
+
+@media (max-width: 900px){
+    body{
+        height: 100vh;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .esqueleto{
+        width: 140px;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    .fundo{
+        display: none;
+    }
+
+    .convite{
+        padding-top: 0;
+        max-width: 97%;
+    }
+
+    .gatitos{
+        max-width: 98%;
+    }
+
+    .container{
+        padding-top: 0;
+    }
+
+    .fundo1{
+        width: 100%;
+        display: block;
+        bottom: 0;
+    }
+
+    .fundo2{
+        width: 100%;
+        display: block;
+        top: 0;
+    }
+
+    .descricao{
+        max-width: 360px;
+        font-size: 28px;
+        font-family: Blackletter;
+        margin-left: auto;
+    }
+
+    .titulo{
+        font-family: Blackletter;
+        font-size: 40px;
+    }
+
+    .sectionCentral{
+        padding-top: 0;
+    }
+
+    .carta{
+        max-width: 150px;
+    }
+
+    #nao, .oba{
+        font-family: Blackletter;
+    }
+}
